@@ -18,9 +18,18 @@ document.getElementById('form').addEventListener('submit', (event) =>{
     alert("Log In Success");
     window.location.href= './Html/home.html'
 })
+
 var createNow = document.getElementById('create')
     if(createNow){
         createNow.addEventListener("click", function(e){
             window.location.href = "./Html/register.html";
         });
     }
+    
+    const modeToggle = document.getElementById('mode-toggle');
+    const body = document.body;
+    
+    modeToggle.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+    });

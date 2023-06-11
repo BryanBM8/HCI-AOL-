@@ -104,3 +104,22 @@ body{
     text-align: center;
     left: 50px;
 }
+
+body.dark-mode{
+    background: black;
+}
+
+.dark-mode{
+    color: white;
+}
+
+.moon{
+    position: absolute;
+    right: 50px;
+    background-color: transparent;
+    width: 30px;
+    cursor: pointer;
+}
+.moon::after{
+    color: white;
+}
