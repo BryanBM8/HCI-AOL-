@@ -1,0 +1,106 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+    background: linear-gradient(90deg, #8282c2, #fbc7d4);
+}
+
+.header{
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    margin-top: 0;
+    left: 260px;
+}
+#form{
+    position: relative;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.user{
+    position: relative;
+    top: 88px;
+    left: -170px;
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pass{
+    position: relative;
+    top: 100px;
+    left: -170px;
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.email{
+    font-size: large;
+    position: relative;
+    top: 130px;
+    left: 100px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: right;
+    outline: none;
+    border: none;  
+}
+.password{
+    position: relative;
+    font-size: medium;
+    top: 140px;
+    left: 100px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: right;
+    outline: none;
+    border: none;  
+}
+#register-button {
+    position: relative;
+    top: 100px;
+    left: 250px;
+    width: 20%;
+    height: 3rem;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px rgba(0, 0, 0, 0.25) solid;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 3.0rem;
+}
+
+#register-button:hover {
+    background-color: rgb(179, 192, 207);
+    transition: 300ms;
+}
+
+.account{
+    position: relative;
+    top: 150px;
+    text-align: center;
+    left: -25px;
+}
+.create{
+    cursor: pointer;
+    position: relative;
+    top: 132px;
+    text-align: center;
+    left: 50px;
+}
