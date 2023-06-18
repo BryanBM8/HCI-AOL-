@@ -14,7 +14,7 @@ body{
     position: absolute;
     top: 50px;
     margin-top: 0;
-    left: 260px;
+    left: 170px;
 }
 #form{
     position: relative;
@@ -22,7 +22,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    height: 400px;
+    height: 500px;
     background: rgba(255, 255, 255, 0.12);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -42,6 +42,27 @@ body{
 .pass{
     position: relative;
     top: 100px;
+    left: -170px;
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mail{
+    font-size: large;
+    position: relative;
+    top: 130px;
+    left: 100px;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: right;
+    outline: none;
+    border: none;  
+}
+.mail2{
+    position: relative;
+    top: 90px;
     left: -170px;
     width: 30px;
     display: block;
@@ -98,14 +119,14 @@ body{
     position: relative;
     top: 150px;
     text-align: center;
-    left: -50px;
+    left: -25px;
 }
 .create{
     cursor: pointer;
     position: relative;
     top: 132px;
     text-align: center;
-    left: 30px;
+    left: 70px;
 }
 
 body.dark-mode{
