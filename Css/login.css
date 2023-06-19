@@ -126,3 +126,6 @@ body.dark-mode{
 .moon::after{
     color: white;
 }
+.passwd-wrap {
+	position: relative;
+}
