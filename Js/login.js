@@ -1,14 +1,17 @@
 document.getElementById('form').addEventListener('submit', (event) =>{
     event.preventDefault()
-    var email = document.getElementById("email").value
+    var email2 = document.getElementById("email").value
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var password = document.getElementById("password").value;
-    if(email === ""){
+    var storePass = JSON.parse(localStorage.getItem('storePass'))
+    if(email2 === ""){
         alert("Email must be filled out")
         return false;
-    }else if(!email.endsWith('@gmail.com')){
-        alert("Email must end with @gmail.com")
+    }else if(!email2.match(emailRegex)){
+        alert("Email is not valid");
         return false
     }
+
     if(password === ""){
         alert("Password must be filled out")
         return false
@@ -16,14 +19,29 @@ document.getElementById('form').addEventListener('submit', (event) =>{
         alert("Password must be at least 8 characters long")
         return false
     }
-    alert("Log In Success");
-    window.location.href= './Html/home.html'
+
+    if(!storePass[email2]){
+        alert("Email not registered");
+        return false
+    }
+    if(storePass === null){
+        alert("Email Not Registered");
+        return false
+    }
+    if(password === storePass){
+        alert("Log In Success");
+        window.location.href = "/home.html";
+        return true
+    }else{
+        alert("Password is incorrect");
+        return false
+    }
 })
 
 var createNow = document.getElementById('create')
     if(createNow){
         createNow.addEventListener("click", function(e){
-            window.location.href = "./Html/register.html";
+            window.location.href = "/Html/register.html";
         });
     }
     

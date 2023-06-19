@@ -72,7 +72,7 @@ body{
     outline: none;
     border: none;  
 }
-#register-button {
+#login-button {
     font-family: 'Poppins', sans-serif;
     position: relative;
     top: 100px;
@@ -89,8 +89,8 @@ body{
     margin-top: 3.0rem;
 }
 
-#register-button:hover {
-    background-color: rgb(179, 192, 207);
+#login-button:hover {
+    background-color: rgb(224, 218, 218);
     transition: 300ms;
 }
 

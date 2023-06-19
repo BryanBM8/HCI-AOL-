@@ -1,20 +1,22 @@
 document.getElementById('form').addEventListener('submit', (event) =>{
     event.preventDefault()
-    var email = document.getElementById("email").value
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var user= document.getElementById("user").value
     var password = document.getElementById("password").value;
     var email2 = document.getElementById("mail2").value;
-    if(email === ""){
+   
+    if(user === ""){
         alert("Username must be filled out")
         return false;
-    }else if(email.length < 8){
+    }else if(user.length < 8){
         alert("Username must be atleast 8 length");
         return false
     }
     if(email2 === ""){
         alert("Email must be filled out")
         return false
-    }else if(!email2.endsWith('@gmail.com')){
-        alert("Email must be use gmail")
+    }else if(!email2.match(emailRegex)){
+        alert("Email is not valid")
         return false
     }
     if(password === ""){
@@ -24,14 +26,21 @@ document.getElementById('form').addEventListener('submit', (event) =>{
         alert("Password must be at least 8 characters long")
         return false
     }
+    if(localStorage.getItem(email2)){
+        alert("Email already registered");
+        return false
+    }
+    localStorage.setItem(email2, password);
     alert("Sign Up Success");
-    window.location.href= '/index.html'
+    window.location.href= '/Html/login.html'
+    return true
 })
+
 
 var createNow = document.getElementById('create')
     if(createNow){
         createNow.addEventListener("click", function(e){
-            window.location.href = "/index.html";
+            window.location.href = "/Html/login.html";
         });
     }
     
@@ -42,3 +51,4 @@ var createNow = document.getElementById('create')
         body.classList.toggle('dark-mode');
         body.classList.toggle('light-mode');
     });
+
