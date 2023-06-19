@@ -117,8 +117,10 @@ body.dark-mode{
 }
 
 .moon{
+    bottom: 90vh;
+    margin-top: 0;
     position: absolute;
-    right: 50px;
+    right: 70px;
     background-color: transparent;
     width: 30px;
     cursor: pointer;
@@ -126,6 +128,13 @@ body.dark-mode{
 .moon::after{
     color: white;
 }
-.passwd-wrap {
-	position: relative;
+.logo{
+    width: 80px;
+}
+
+.statuto{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: -60px;
+    left: 70px;
 }
