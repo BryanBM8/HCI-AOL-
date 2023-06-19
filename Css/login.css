@@ -5,6 +5,7 @@
 
 body{
     background: linear-gradient(90deg, #8282c2, #fbc7d4);
+    overflow-x: auto;
 }
 
 .header{
@@ -18,7 +19,7 @@ body{
 }
 #form{
     position: relative;
-    top: 200px;
+    top: 150px;
     margin-left: auto;
     margin-right: auto;
     width: 600px;
@@ -120,7 +121,7 @@ body.dark-mode{
     bottom: 90vh;
     margin-top: 0;
     position: absolute;
-    right: 70px;
+    right: 70px; 
     background-color: transparent;
     width: 30px;
     cursor: pointer;

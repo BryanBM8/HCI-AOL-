@@ -30,7 +30,7 @@ document.getElementById('form').addEventListener('submit', (event) =>{
     }
     if(password === storePass){
         alert("Log In Success");
-        window.location.href = "/home.html";
+        window.location.href = "/index.html";
         return true
     }else{
         alert("Password is incorrect");
