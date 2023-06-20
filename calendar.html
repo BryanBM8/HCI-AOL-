@@ -23,6 +23,48 @@
     <title>Calendar with Events</title>
   </head>
   <body>
+
+
+    <aside class="sidebar open">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <button
+            type="button"
+            class="sidebar-burger"
+            onclick="toggleSidebar()"
+          ></button>
+          <img src="statuto.png" class="sidebar-logo"/>
+        </header>
+        <nav class="sidebar-nav">
+          <button type="button">
+            <img src="./assets/icon-home.svg"/>
+            <a href=""><span>Home</span></a>
+          </button>
+          <button type="button">
+            <img src="./assets/icon-settings.svg" />
+            <a href="calendar.html"><span style="animation-delay: 0.1s">Calendar</span></a>
+          </button>
+          <button type="button">
+            <img src="./assets/icon-levels.svg" />
+            <a href="notes.html"><span style="animation-delay: 0.2s">Notes</span></a>
+          </button>
+          <button type="button">
+            <img src="./assets/icon-accounts.svg" />
+            <a href=""><span style="animation-delay: 0.3s">Accounts</span></a>
+          </button>
+        </nav>
+        <footer class="sidebar-footer">
+          <button type="button">
+            <img src="./assets/icon-lock.svg" />
+            <a href="./login.html"><span>Logout</span></a>
+          </button>
+        </footer>
+      </div>
+    </aside>
+
+
+
+
     <div class="container">
       <div class="left">
         <div class="calendar">
@@ -89,6 +131,18 @@
         <i class="fas fa-plus"></i>
       </button>
     </div>
+
+
+    <script type="text/javascript">
+      const toggleSidebar = () => document.body.classList.toggle("open");
+
+      let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebar-burger");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+        });
+    </script>
 
     <script src="./calendar.js"></script>
   </body>
