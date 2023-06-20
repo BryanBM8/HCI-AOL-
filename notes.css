@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background: pink;
+  background: linear-gradient(90deg, #8282c2, #fbc7d4);
 } 
 body.dark-mode{
   background: black;
@@ -64,6 +64,20 @@ body.open .sidebar {
   height: 72px;
   padding: 0 1.25rem 0 0;
   background: rgba(0, 0, 0, 0.1);
+}
+
+.content-body {
+  position: relative;
+  min-height: 100vh;
+  width: calc(100% - 120px);
+  left: 100px;
+  transition: all 0.5s ease;
+  margin-top: 20px;
+}
+
+.sidebar.close~.content-body {
+width: calc(100% - 300px);
+left: 280px;
 }
 
 .sidebar-burger {

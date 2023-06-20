@@ -4,7 +4,7 @@
   
   body {
     margin: 0;
-    background: #c5d4eb;
+    background: linear-gradient(90deg, #8282c2, #fbc7d4);
   }
 
   .tooltip-container {
