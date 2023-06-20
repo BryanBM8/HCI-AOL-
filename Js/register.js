@@ -51,4 +51,19 @@ var createNow = document.getElementById('create')
         body.classList.toggle('dark-mode');
         body.classList.toggle('light-mode');
     });
-
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        var toggleButton = document.getElementById("toggleButton");
+    
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            toggleButton.textContent = "Hide";
+            passwordInput.setAttribute("data-visible", "true");
+        } else {
+            passwordInput.type = "password";
+            toggleButton.textContent = "Show";
+            passwordInput.setAttribute("data-visible", "false");
+        }
+    
+     
+    }

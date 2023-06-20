@@ -5,7 +5,7 @@
 
 body{
     background: linear-gradient(90deg, #8282c2, #fbc7d4);
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .header{
@@ -144,11 +144,8 @@ body.dark-mode{
     font-family: poppins;
     top: -15px;
     position: relative;
-    left: 77rem;
+    left: 70vw;
     border-radius: 5px;
     width: -0px;
     height: 0px;
-}
-.eye{
-    width: 30px;
 }
