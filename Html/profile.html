@@ -8,6 +8,44 @@
     <link rel="icon" href="/icon/Statuto.png">
 </head>
 <body>
+    <!-- sidebar -->
+    <aside class="sidebar open">
+        <div class="sidebar-inner">
+          <header class="sidebar-header">
+            <button
+              type="button"
+              class="sidebar-burger"
+              onclick="toggleSidebar()"
+            ></button>
+            <img src="statuto.png" class="sidebar-logo"/>
+          </header>
+          <nav class="sidebar-nav">
+            <button type="button">
+              <img src="./assets/icon-home.svg" />
+              <span>Home</span>
+            </button>
+            <button type="button">
+              <img src="./assets/icon-settings.svg" />
+              <span style="animation-delay: 0.1s">Calendar</span>
+            </button>
+            <button type="button">
+              <img src="./assets/icon-levels.svg" />
+              <span style="animation-delay: 0.2s">Notes</span>
+            </button>
+            <button type="button">
+              <img src="./assets/icon-accounts.svg" />
+              <span style="animation-delay: 0.3s">Accounts</span>
+            </button>
+          </nav>
+          <footer class="sidebar-footer">
+            <button type="button">
+              <img src="./assets/icon-lock.svg" />
+              <span>Logout</span>
+            </button>
+          </footer>
+        </div>
+      </aside>
+
     <button id="mode-toggle" class="toggle"><img src="/icon/moon.png" alt="" class="moon"></button>
     <div class="containertitle">
     <img src="/icon/Statuto (1) 1.png" alt="">
