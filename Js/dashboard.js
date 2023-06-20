@@ -160,7 +160,7 @@ addAlarm.addEventListener('submit', event => {
 setInterval(updateTime, 1000);
 
 // Create a new Audio object for the ringtone
-const ringtone = new Audio('icon/ajojing.mp3');
+const ringtone = new Audio('/icon/ajojing.mp3');
 
 // Function to play the ringtone
 function playRingtone() {
