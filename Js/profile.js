@@ -110,11 +110,8 @@ function togglePasswordVisibility() {
 
  
 }
-
-
-
-        var editButton = document.getElementById("editButton");
-        editButton.addEventListener("click", toggleEdit);
+    var editButton = document.getElementById("editButton");
+    editButton.addEventListener("click", toggleEdit);
 
     const modeToggle = document.getElementById('mode-toggle');
     const body = document.body;
