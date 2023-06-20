@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(90deg, #8282c2, #fbc7d4);
+}
+
+.containertitle{
+    display: flex;
+}
+
+.title{
+    font-weight: bolder;
+    color: white;
+    padding-top: 3.3vw;
+    padding-left: 0;
+}
+
+.form{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#email{
+    width: 80vw;
+    /* padding-bottom: 2vw; */
+    margin: 1.25vw;
+    height: 3vw;
+    /* width: 50vw; */
+    border-radius: 0.8vw;
+    padding-inline-start: .5vw;
+}
+
+.form button{
+    margin: 1.25vw;
+    margin-top: 0;
+    color: rgb(251, 37, 118);
+    background-color: white;
+    border-radius: 0.8vw;
+    font-weight: bolder;
+    padding: 0.8vw;
+    border-color: white;
+}
+
+#emaillist div{
+    color: white;
+    margin: 0.8vw;
+}
+
+#emailList {
+    color: white;
+    margin: 1.25vw;
+}
+
+#emailList div select{
+    margin: 1.25vw;
+    margin-top: 0;
+    color: rgb(251, 37, 118);
+    background-color: white;
+    border-radius: 0.8vw;
+    font-weight: bolder;
+    padding: 0.8vw;
+    border-color: white;
+}
+
+
+#resetButton{
+    margin: 1.25vw;
+    margin-top: 0;
+    color: rgb(251, 37, 118);
+    background-color: white;
+    border-radius: 0.8vw;
+    font-weight: bolder;
+    padding: 0.8vw;
+    border-color: white;
+}
+
+

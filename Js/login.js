@@ -3,7 +3,6 @@ document.getElementById('form').addEventListener('submit', (event) =>{
     var email2 = document.getElementById("email").value
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var password = document.getElementById("password").value;
-    var storePass = JSON.parse(localStorage.getItem('storePass'))
     if(email2 === ""){
         alert("Email must be filled out")
         return false;
@@ -20,23 +19,23 @@ document.getElementById('form').addEventListener('submit', (event) =>{
         return false
     }
 
-    if(!storePass[email2]){
-        alert("Email not registered");
-        return false
+    var storePassword = localStorage.getItem(email2);
+
+    if(storePassword === null){
+        alert("Email not Registered!");
+        return false;
     }
-    if(storePass === null){
-        alert("Email Not Registered");
-        return false
-    }
-    if(password === storePass){
-        alert("Log In Success");
-        window.location.href = "/index.html";
-        return true
+
+    if(password === storePassword){
+        alert("Log in Successful!");
+        window.location.href = "/Html/dashboard2.html";
+        return true;
     }else{
-        alert("Password is incorrect");
-        return false
+        alert("Password is incorrect!");
+        return false;
     }
 })
+  
 
 var createNow = document.getElementById('create')
     if(createNow){

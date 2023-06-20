@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statuto | Edit Profile</title>
+    <link rel="stylesheet" href="/Css/profile.css">
+    <link rel="icon" href="/icon/Statuto.png">
+</head>
+<body>
+    <div class="containertitle">
+    <img src="Statuto (1) 1.png" alt="">
+    <label class="title">Edit Profile</label>
+    </div>
+    <div class="profilephoto">
+        <div id="container">
+            <img src="account_circle_FILL1_wght500_GRAD200_opsz48.png" id="profileimg">
+            <img src="mdi_camera.png" id="hoverimg">
+        </div>
+        <input id="Img" type="file" style="display: none;">
+    </div>
+
+<div class="box">
+    <div id="Name">
+        <label>Name</label>
+        <br>
+        <input type="text" id="nameInput" value="User" readonly>
+        <br>
+        <label>Email</label>
+        <br>
+        <input type="email" id="emailInput" value="user@gmail.com" readonly>
+        <br>
+        <label>Birth Date</label>
+        <br>
+        <input type="date" id="dateInput" value="2023-01-01" readonly>
+        <br>
+        <label>Password</label>
+        <br>
+        <input type="password" id="passwordInput" value="123456" readonly/>
+        <button id="toggleButton" onclick="togglePasswordVisibility()">Show</button>
+    </div>
+    <button id="editButton">Edit</button>
+</div>
+
+</body>
+<script src="/Js/profile.js"></script>
+</html>

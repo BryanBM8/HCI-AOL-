@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-color: pink;
+}
+
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    height: 270px;
+    width: 45%;
+    position: relative;
+    display: flex;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.container .card .iconBox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+    background: #88b4a12a;
+    transition: 0.4s ease-in-out;
+    border-radius: 30px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container .card:hover .iconBox{
+    width: 170px;
+    height: 70px;
+    top: calc(50% - 80px);
+    left: -85px;
+}
+
+.container .card .iconBox i{
+    max-width: 100px;
+    filter: invert(1);
+    transition: 0.4s ease-in-out;
+}
+
+.container .card .content{
+    width: calc(100% - 75px);
+    height: 100%;
+    right: 0;
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .content h3{
+    color: #162533;
+    margin-bottom: 12px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.container .card .content p{
+    color: #162533;
+}

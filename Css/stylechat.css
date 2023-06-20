@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(90deg, #8282c2, #fbc7d4);
+}
+
+.containertitle{
+  display: flex;
+}
+ 
+.title{
+      font-weight: bolder;
+      color: white;
+      padding-top: 3.3vw;
+      padding-left: 0;
+}
+
+.chat-container {
+  width: 100vw;
+  margin: 0 auto;
+  text-align: right;
+  background-color: white;
+}
+
+#chat-messages {
+  height: 300px;
+  border: 1px solid #ccc;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+#message-input {
+  width: 80vw;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#send-button {
+  padding: 5px 10px;
+}
+
+#delete-history-button{
+  padding: 5px 10px;
+}
