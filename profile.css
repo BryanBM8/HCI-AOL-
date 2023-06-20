@@ -15,14 +15,6 @@ body {
 }
 
 /* sidebar */
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    background: #121212;
-  }
   
   button {
     background: transparent;
@@ -32,7 +24,7 @@ body {
   }
   
   .sidebar {
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     top: 0;
     left: 0;
@@ -77,6 +69,20 @@ body {
     background: url(icon-burger.svg) no-repeat center center;
     transition: 0.3s;
   }
+
+  .content-body {
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% - 120px);
+    left: 100px;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+}
+
+.sidebar.close~.content-body {
+  width: calc(100% - 300px);
+  left: 280px;
+}
   
   body.open .sidebar-burger {
     background: url(icon-close.svg) no-repeat center center;
@@ -230,6 +236,15 @@ font-weight: bolder;
     width: 50vw;
     border-radius: 0.8vw;
     padding-inline-start: .5vw;
+    background: rgba(255,255,255,0.2);
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .box button{

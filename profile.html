@@ -46,6 +46,7 @@
         </div>
       </aside>
 
+      <div class="content-body">
     <button id="mode-toggle" class="toggle"><img src="/icon/moon.png" alt="" class="moon"></button>
     <div class="containertitle">
     <img src="/icon/Statuto (1) 1.png" alt="">
@@ -80,7 +81,18 @@
     </div>
     <button id="editButton">Edit</button>
 </div>
+</div>
 
 </body>
 <script src="./profile.js"></script>
+<script>
+const toggleSidebar = () => document.body.classList.toggle("open");
+
+let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".sidebar-burger");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+      });
+</script>
 </html>
