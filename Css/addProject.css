@@ -8,6 +8,13 @@ body {
     align-items: center;
     height: 100vh;
   }
+  body.dark-mode{
+    background: black;
+  }
+
+  .dark-mode{
+    color: white;
+  }
   
   .app {
     background-color: #fff;
@@ -94,4 +101,15 @@ body {
   align-items: stretch;
 }
 
+.moon{
+  bottom: 90vh;
+  position: absolute;
+  right: 50px;
+  background-color: transparent;
+  width: 30px;
+  cursor: pointer;
+}
+.moon::after{
+  color: white;
+}
   

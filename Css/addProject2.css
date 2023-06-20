@@ -10,6 +10,14 @@
     align-items: center;
     background-color: pink;
   }
+
+  body.dark-mode{
+    background: black;
+}
+
+.dark-mode{
+    color: white;
+}
   
   .todo-container {
     width: 1000px;
@@ -203,3 +211,14 @@
     font-weight: 600;
     margin-top: 20px;
   }
+  .moon{
+    bottom: 90vh;
+    position: absolute;
+    right: 50px;
+    background-color: transparent;
+    width: 30px;
+    cursor: pointer;
+}
+.moon::after{
+    color: white;
+}

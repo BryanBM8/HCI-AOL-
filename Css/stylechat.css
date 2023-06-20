@@ -14,6 +14,13 @@ body {
   overflow-x: hidden;
   background: linear-gradient(90deg, #8282c2, #fbc7d4);
 }
+body.dark-mode{
+  background: black;
+}
+
+.dark-mode{
+  color: white;
+}
 
 .containertitle{
   display: flex;
@@ -52,4 +59,16 @@ body {
 
 #delete-history-button{
   padding: 5px 10px;
+}
+
+.moon{
+  bottom: 90vh;
+  position: absolute;
+  right: 50px;
+  background-color: transparent;
+  width: 30px;
+  cursor: pointer;
+}
+.moon::after{
+  color: white;
 }

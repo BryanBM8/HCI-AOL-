@@ -16,6 +16,24 @@
     justify-content: center;
     background-color: #e2e1dc;
   }
+  body.dark-mode{
+    background: black;
+}
+
+.dark-mode{
+    color: white;
+}
+.moon{
+  bottom: 90vh;
+  position: absolute;
+  right: 50px;
+  background-color: transparent;
+  width: 30px;
+  cursor: pointer;
+}
+.moon::after{
+  color: white;
+}
   .container {
     position: relative;
     width: 100vw;
@@ -534,3 +552,4 @@
   .credits a:hover {
     text-decoration: underline;
   }
+  

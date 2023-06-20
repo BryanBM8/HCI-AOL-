@@ -14,6 +14,13 @@ body {
     background: linear-gradient(90deg, #8282c2, #fbc7d4);
 }
 
+body.dark-mode{
+    background: black;
+}
+
+.dark-mode{
+    color: white;
+}
 .box{
     padding-top: 0.8vw;
 }
@@ -92,9 +99,6 @@ color: white;
 font-weight: bolder;
 }
 
-
-
-
 .box input{
     margin: 1.25vw;
     height: 3vw;
@@ -118,4 +122,16 @@ font-weight: bolder;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.moon{
+    bottom: 90vh;
+    position: absolute;
+    right: 50px;
+    background-color: transparent;
+    width: 30px;
+    cursor: pointer;
+}
+.moon::after{
+    color: white;
 }

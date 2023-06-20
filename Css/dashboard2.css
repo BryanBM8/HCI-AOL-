@@ -15,6 +15,13 @@ body{
     background-attachment: fixed;
     background-color: pink;
 }
+body.dark-mode{
+    background: black;
+}
+
+.dark-mode{
+    color: white;
+}
 
 .container{
     width: 1000px;
@@ -84,4 +91,15 @@ body{
 
 .container .card .content p{
     color: #162533;
+}
+.moon{
+    bottom: 90vh;
+    position: absolute;
+    right: 50px;
+    background-color: transparent;
+    width: 30px;
+    cursor: pointer;
+}
+.moon::after{
+    color: white;
 }

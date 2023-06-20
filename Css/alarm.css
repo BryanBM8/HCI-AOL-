@@ -7,6 +7,13 @@
   body {
     background-color: #377dff;
   }
+  body.dark-mode{
+    background: black;
+  }
+
+.dark-mode{
+    color: rgb(0, 0, 0);
+}
   .hide {
     display: none;
   }
@@ -92,3 +99,14 @@
     border: none;
     cursor: pointer;
   }
+  .moon{
+    bottom: 90vh;
+    position: absolute;
+    right: 50px;
+    background-color: transparent;
+    width: 30px;
+    cursor: pointer;
+}
+.moon::after{
+    color: white;
+}

@@ -8,6 +8,13 @@
 }
 body{
   background: pink;
+} 
+body.dark-mode{
+  background: black;
+}
+
+.dark-mode{
+  color: white;
 }
 ::selection{
   color: #fff;
@@ -255,6 +262,18 @@ form button{
   border-radius: 4px;
   background: #fff;
   font-weight: 600;
+}
+
+.moon{
+  bottom: 90vh;
+  position: absolute;
+  right: 50px;
+  background-color: transparent;
+  width: 30px;
+  cursor: pointer;
+}
+.moon::after{
+  color: white;
 }
 
 @media (max-width: 660px){
