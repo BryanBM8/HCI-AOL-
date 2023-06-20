@@ -4,8 +4,9 @@
 }
 
 body{
+    margin: auto;
     background: linear-gradient(90deg, #8282c2, #fbc7d4);
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 body.dark-mode{
     background: black;
@@ -72,8 +73,8 @@ body.dark-mode{
     font-family: 'Poppins', sans-serif;
     position: relative;
     bottom: 250px;
-    left: 54rem;
-    width: 5%;
+    left: 40vw;
+    width: 15vh;
     height: 3rem;
     border-color: black;
     background-color: rgb(255, 255, 255);
@@ -90,8 +91,8 @@ body.dark-mode{
     font-family: 'Poppins', sans-serif;
     position: relative;
     bottom: 250px;
-    left: 60rem;
-    width: 5%;
+    left: 42vw;
+    width: 15vh;
     height: 3rem;
     border-color: black;
     background-color: rgb(255, 255, 255);
