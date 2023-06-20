@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stay organized with our user-friendly Calendar featuring events, reminders, and a customizable interface. Built with HTML, CSS, and JavaScript. Start scheduling today!"
+    />
+    <meta
+      name="keywords"
+      content="calendar, events, reminders, javascript, html, css, open source coding"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -11,12 +19,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="/icon/Statuto.png">
     <link rel="stylesheet" href="/Css/calendar.css" />
     <title>Calendar with Events</title>
   </head>
   <body>
-    <button id="mode-toggle" class="toggle"><img src="/icon/moon.png" alt="" class="moon"></button>
     <div class="container">
       <div class="left">
         <div class="calendar">
@@ -36,6 +42,10 @@
           </div>
           <div class="days"></div>
           <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Go</button>
+            </div>
             <button class="today-btn">Today</button>
           </div>
         </div>
