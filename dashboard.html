@@ -56,7 +56,10 @@
 <div class="content-body">
     <section>
         <div id="container">
-            <h1>Speech to Text</h1>
+            <div class="tooltip-container">
+              <h1>Speech to Text</h1>
+              <div class="tooltip">Click To Speak</div>
+            </div>
             <span class="speech">
               <i class="fa-solid fa-language fa-3x"></i>
               <button id="startBtn">Mulai Mendengarkan</button>
@@ -86,7 +89,10 @@
             <div class="todo-container">
               <div class="status" id="no_status">
                 <h1>No Status</h1>
-                <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
+                <div class="tooltip-container">
+                  <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
+                  <div class="tooltip">Click To Add</div>
+                </div>
                 <div class="todo" draggable="true">
                   Buy a Pizza
                   <span class="close">&times;</span>
