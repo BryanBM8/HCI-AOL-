@@ -29,7 +29,7 @@ document.getElementById('form').addEventListener('submit', (event) =>{
     if(password === storePassword){
         alert("Log in Successful!");
         localStorage.setItem("loggedInEmail", email2);
-        window.location.href = "/Html/dashboard.html";
+        window.location.href = "./dashboard.html";
         return true;
     }else{
         alert("Password is incorrect!");
@@ -41,7 +41,7 @@ document.getElementById('form').addEventListener('submit', (event) =>{
 var createNow = document.getElementById('create')
     if(createNow){
         createNow.addEventListener("click", function(e){
-            window.location.href = "/Html/register.html";
+            window.location.href = "register.html";
         });
     }
     

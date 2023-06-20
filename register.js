@@ -32,7 +32,7 @@ document.getElementById('form').addEventListener('submit', (event) =>{
     }
     localStorage.setItem(email2, password);
     alert("Sign Up Success");
-    window.location.href= '/Html/login.html'
+    window.location.href= './login.html'
     return true
 })
 
@@ -40,7 +40,7 @@ document.getElementById('form').addEventListener('submit', (event) =>{
 var createNow = document.getElementById('create')
     if(createNow){
         createNow.addEventListener("click", function(e){
-            window.location.href = "/Html/login.html";
+            window.location.href = "./login.html";
         });
     }
     

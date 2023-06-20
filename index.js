@@ -9,13 +9,13 @@ modeToggle.addEventListener('click', function() {
 var signIn = document.getElementById('sign-in');
 if(signIn){
     signIn.addEventListener("click", function(e){
-        window.location.href = "/Html/login.html";
+        window.location.href = "./login.html";
     });
 }
 
 var signUp = document.getElementById('sign-up');
 if(signUp){
     signUp.addEventListener("click", function(e){
-        window.location.href = "/Html/register.html";
+        window.location.href = "./register.html";
     });
 }
