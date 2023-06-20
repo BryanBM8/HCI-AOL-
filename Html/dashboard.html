@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Css/dashboard.css"/>
+  </head>
+  <body>
+    <aside class="sidebar open">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <button
+            type="button"
+            class="sidebar-burger"
+            onclick="toggleSidebar()"
+          ></button>
+          <img src="statuto.png" class="sidebar-logo"/>
+        </header>
+        <nav class="sidebar-nav">
+          <button type="button">
+            <img src="./assets/icon-home.svg"/>
+            <a href=""><span>Home</span></a>
+          </button>
+          <button type="button">
+            <img src="./assets/icon-settings.svg" />
+            <a href="calendar.html"><span style="animation-delay: 0.1s">Calendar</span></a>
+          </button>
+          <button type="button">
+            <img src="./assets/icon-levels.svg" />
+            <a href=""><span style="animation-delay: 0.2s">Notes</span></a>
+          </button>
+          <button type="button">
+            <img src="./assets/icon-accounts.svg" />
+            <a href=""><span style="animation-delay: 0.3s">Accounts</span></a>
+          </button>
+        </nav>
+        <footer class="sidebar-footer">
+          <button type="button">
+            <img src="./assets/icon-lock.svg" />
+            <span>Logout</span>
+          </button>
+        </footer>
+      </div>
+    </aside>
+
+<div class="content-body">
+    <section>
+        <div id="container">
+            <h1>Speech to Text</h1>
+            <button id="startBtn">Mulai Mendengarkan</button>
+            <div id="output"></div>
+          </div> 
+    </section>
+
+    <section>
+        <div class="modal" id="todo_form">
+          <div class="header">
+            <div class="title">Add Todo</div>
+            <button class="btn close-modal">&times;</button>
+          </div>
+          <div class="body">
+            <label class="label">Title</label>
+            <input type="text" id="todo_input"/>
+            <label class="label">Deadline</label><br>
+            <input type="date" id="date_input" placeholder="Deadline" /><br>
+            <label class="label">Description</label><br>
+            <textarea id="textarea"></textarea>
+            <input type="submit" value="Add Todo" id="todo_submit" />
+          </div>
+        </div>
+        
+            <!-- todo -->
+            <div class="todo-container">
+              <div class="status" id="no_status">
+                <h1>No Status</h1>
+                <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
+                <div class="todo" draggable="true">
+                  Buy a Pizza
+                  <span class="close">&times;</span>
+                </div>
+              </div>
+              <div class="status">
+                <h1>Not Started</h1>
+              </div>
+              <div class="status">
+                <h1>In Progress</h1>
+              </div>
+              <div class="status">
+                <h1>Completed</h1>
+              </div>
+            </div>
+            <div id="overlay"></div>
+          </section>
+
+          <section>
+            <div id="wrapper">
+                <img src="alarm clock.png" alt="clock">
+                <audio id="ringtone" src="ajojing.mp3"></audio>
+        
+                <!-- This h1 text changes to real time -->
+                <h1 class="alarm">00:00:00</h1>
+        
+                <!-- Form to take time input -->
+                <form class="setAlarm">
+                    <!-- Div to set hours, minutes & seconds -->
+                    <div class="set-alarm-field">
+                        <input type="number" name="hr" placeholder="HH" max="23" min="00">
+                        <input type="number" name="min" placeholder="MM" max="59" min="00">
+                        <input type="number" name="sec" placeholder="SS" max="59" min="00">
+                    </div>
+                    <!-- Div that contains buttons -->
+                    <div class="buttons">
+                        <button type="submit" class="set-alarm">Set Alarm</button>
+                        <button type="reset" onclick="stopAlarm()" class="clear-alarm">Stop Alarm</button>
+                    </div>
+                </form>
+        
+                <hr style="margin-top: 20px">
+        
+                <h3 style="margin: 20px 0;">Upcoming Alarms</h3>
+        
+                <!-- Div that contains the list of all set alarms -->
+                <div id="upcoming-alarms">
+                    <ul id="upcoming-alarms-list">
+                        <!-- The list item is added using javascript when set alarm button is pressed -->
+                    </ul>
+                </div>
+            </div>
+          </section>
+        </div>
+
+    <script type="text/javascript">
+      const toggleSidebar = () => document.body.classList.toggle("open");
+
+      let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebar-burger");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+        });
+    </script>
+    <script src="/Js/dashboard.js"></script>
+  </body>
+</html>
