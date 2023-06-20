@@ -4,8 +4,9 @@
 }
 
 body{
+    margin: auto;
     background: linear-gradient(90deg, #8282c2, #fbc7d4);
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 body.dark-mode{
     background: black;
