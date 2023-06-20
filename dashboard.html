@@ -7,10 +7,12 @@
     <title>Sidebar 5</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/26b7cacf1a.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./dashboard.css"/>
   </head>
   <body>
@@ -26,25 +28,25 @@
         </header>
         <nav class="sidebar-nav">
           <button type="button">
-            <img src="./assets/icon-home.svg"/>
+            <i class="fa-solid fa-house"></i>
             <a href=""><span>Home</span></a>
           </button>
           <button type="button">
-            <img src="./assets/icon-settings.svg" />
+            <i class="fa-solid fa-calendar"></i>
             <a href="calendar.html"><span style="animation-delay: 0.1s">Calendar</span></a>
           </button>
           <button type="button">
-            <img src="./assets/icon-levels.svg" />
+            <i class="fa-solid fa-note-sticky"></i>
             <a href="notes.html"><span style="animation-delay: 0.2s">Notes</span></a>
           </button>
           <button type="button">
-            <img src="./assets/icon-accounts.svg" />
+            <i class="fa-solid fa-user"></i>
             <a href=""><span style="animation-delay: 0.3s">Accounts</span></a>
           </button>
         </nav>
         <footer class="sidebar-footer">
           <button type="button">
-            <img src="./assets/icon-lock.svg" />
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
             <a href="./login.html"><span>Logout</span></a>
           </button>
         </footer>
@@ -55,7 +57,10 @@
     <section>
         <div id="container">
             <h1>Speech to Text</h1>
-            <button id="startBtn">Mulai Mendengarkan</button>
+            <span class="speech">
+              <i class="fa-solid fa-language fa-3x"></i>
+              <button id="startBtn">Mulai Mendengarkan</button>
+            </span>
             <div id="output"></div>
           </div> 
     </section>
@@ -102,7 +107,7 @@
 
           <section>
             <div id="wrapper">
-                <img src="alarm clock.png" alt="clock">
+              <i class="fa-solid fa-clock fa-3x"></i><br>
                 <audio id="ringtone" src="ajojing.mp3"></audio>
         
                

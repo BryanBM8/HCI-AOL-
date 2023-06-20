@@ -312,8 +312,9 @@ function createTodo() {
   todo_date.textContent = date;
   todo_desc.textContent = desc;
   span.textContent = "\u00D7";
+  span.style.color = "#000"
   editBtn.textContent = "Edit";
-  editBtn.style.color = "#fff";
+  editBtn.style.color = "#000";
 
   todo_div.classList.add("todo");
   todo_div.setAttribute("draggable", "true");
