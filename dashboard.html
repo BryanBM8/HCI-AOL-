@@ -84,9 +84,14 @@
           <form class="setAlarm">
               
               <div class="set-alarm-field">
+                <div class="tooltip-container">
                   <input type="number" name="hr" placeholder="HH" max="23" min="00">
+                  <div class="tooltip">Input a number</div>
                   <input type="number" name="min" placeholder="MM" max="59" min="00">
+                  <div class="tooltip">Input a number</div>
                   <input type="number" name="sec" placeholder="SS" max="59" min="00">
+                  <div class="tooltip">Input a number</div>
+                </div>
               </div>
 
               <div class="buttons">
@@ -153,47 +158,6 @@
               </div>
             </div>
             <div id="overlay"></div>
-          </section>
-
-          <section>
-            <div id="wrapper">
-              <i class="fa-solid fa-clock fa-3x"></i><br>
-                <audio id="ringtone" src="ajojing.mp3"></audio>
-        
-               
-                <h1 class="alarm">00:00:00</h1>
-        
-              
-                <form class="setAlarm">
-                    
-                    <div class="set-alarm-field">
-                      <div class="tooltip-container">
-                        <input type="number" name="hr" placeholder="HH" max="23" min="00">
-                        <div class="tooltip">Input a number</div>
-                        <input type="number" name="min" placeholder="MM" max="59" min="00">
-                        <div class="tooltip">Input a number</div>
-                        <input type="number" name="sec" placeholder="SS" max="59" min="00">
-                        <div class="tooltip">Input a number</div>
-                      </div>
-                    </div>
-
-                    <div class="buttons">
-                        <button type="submit" class="set-alarm">Set Alarm</button>
-                        <button type="reset" onclick="stopAlarm()" class="clear-alarm">Stop Alarm</button>
-                    </div>
-                </form>
-        
-                <hr style="margin-top: 20px">
-        
-                <h3 style="margin: 20px 0;">Upcoming Alarms</h3>
-        
-
-                <div id="upcoming-alarms">
-                    <ul id="upcoming-alarms-list">
-
-                    </ul>
-                </div>
-            </div>
           </section>
         </div>
 
