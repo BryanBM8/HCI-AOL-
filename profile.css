@@ -3,7 +3,7 @@
 *{
 	padding: 0;
 	margin: 0;
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -14,6 +14,37 @@ body {
     background: linear-gradient(90deg, #8282c2, #fbc7d4);
 }
 
+body.dark-mode{
+  background: #373c4f;
+}
+
+body.dark-mode .container{
+  background: #373c4f;
+}
+
+body.dark-mode .sidebar{
+  background: #373c4f;
+}
+
+body.dark-mode .sidebar-header{
+  background: #373c4f;
+}
+
+.dark-mode{
+  color: white;
+}
+.moon{
+  bottom: 90vh;
+  margin-top: 0;
+  position: absolute;
+  right: 70px; 
+  background-color: transparent;
+  width: 30px;
+  cursor: pointer;
+}
+.moon::after{
+  color: white;
+}
 /* sidebar */
   
   button {
@@ -147,14 +178,6 @@ body {
     text-decoration: none;
   }
 
-
-body.dark-mode{
-    background: black;
-}
-
-.dark-mode{
-    color: white;
-}
 
 .fa-solid, .fas.dark-mode {
   font-weight: 900;

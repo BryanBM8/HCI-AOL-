@@ -10,10 +10,34 @@ body{
   background: linear-gradient(90deg, #8282c2, #fbc7d4);
 } 
 body.dark-mode{
-  background: black;
+  background: #373c4f;
+}
+
+body.dark-mode .container{
+  background: #373c4f;
+}
+
+body.dark-mode .sidebar{
+  background: #373c4f;
+}
+
+body.dark-mode .sidebar-header{
+  background: #373c4f;
 }
 
 .dark-mode{
+  color: white;
+}
+.moon{
+  top: 60px;
+  margin-top: 0;
+  position: absolute;
+  right: 70px; 
+  background-color: transparent;
+  width: 30px;
+  cursor: pointer;
+}
+.moon::after{
   color: white;
 }
 ::selection{
