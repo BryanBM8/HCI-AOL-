@@ -23,6 +23,18 @@ file.addEventListener("change", function(e) {
 });
 
 
+var savedEmail = localStorage.getItem("loggedInEmail");
+var savedPassword = localStorage.getItem("password");
+
+var emailInput = document.getElementById("emailInput");
+var passwordInput = document.getElementById("passwordInput");
+
+emailInput.value = savedEmail;
+passwordInput.value = savedPassword;
+
+
+
+
 function validateEmail(email) {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -67,14 +79,14 @@ function saveToLocalStorage() {
     var emailValue= emailInput.value;    var passwordValue= passwordInput.value;
     localStorage.setItem("savedName", nameValue);
     localStorage.setItem("savedDate", dateValue);
-    localStorage.setItem("savedPassword", passwordValue);
-    localStorage.setItem("saveEmail",emailValue);
+    localStorage.setItem(email2, passwordValue);
+    localStorage.setItem(password,emailValue);
 }
 
 var savedName = localStorage.getItem("savedName");
 var savedDate = localStorage.getItem("savedDate");
-var savedEmail=localStorage.getItem("savedEmail");
-var savedPassword = localStorage.getItem("savedPassword");
+var savedEmail=localStorage.getItem(email2);
+var savedPassword = localStorage.getItem(password);
 var nameInput = document.getElementById("nameInput");
 var dateInput = document.getElementById("dateInput");
 var emailInput=document.getElementById("emailInput");
