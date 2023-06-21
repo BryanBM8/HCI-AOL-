@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
   
@@ -128,7 +130,7 @@
   }
   
   .sidebar button > a {
-    color: #000;
+    color: #fff;
     opacity: 0;
     transition: 0.3s;
     list-style: none;
@@ -239,7 +241,8 @@ h3, p {
 }
 
 .set-alarm:hover {
-    background-color: rgb(207, 57, 207);
+    background-color: #0a0a0a;
+    color: #fff;
 }
 
 .clear-alarm {
@@ -248,8 +251,8 @@ h3, p {
 }
 
 .clear-alarm:hover {
-    background-color: rgb(207, 57, 207);
-    color: white;
+  background-color: #0a0a0a;
+  color: #fff;
 }
 
 .buttons button {
@@ -320,14 +323,14 @@ h3, p {
     position: relative;
     min-height: 100vh;
     width: calc(100% - 120px);
-    left: 100px;
+    left: 44px;
     transition: all 0.5s ease;
     margin-top: 20px;
 }
 
 .sidebar.close~.content-body {
   width: calc(100% - 300px);
-  left: 280px;
+  left: 141px;
 }
 
   /* untuk AI Voice command */
@@ -353,7 +356,7 @@ h3, p {
       letter-spacing: 1px;
       color: #fff;
       box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      width: 100vw;
+      width: 89vw;
       height: 50px;
     }
   
@@ -378,7 +381,7 @@ h3, p {
   }
   
   .todo-container {
-    width: 1000px;
+    width: 85vw;
     height: 80vh;
     display: flex;
   }
@@ -417,7 +420,7 @@ h3, p {
   
   #add_btn {
     padding: 0.5rem 1rem;
-    color: #666;
+    color: #0a0a0a;
     outline: none;
     font-size: 17px;
     border-radius: 4px;
@@ -589,4 +592,9 @@ body.dark-mode{
 
 .dark-mode{
   color: white;
+}
+
+.fa-solid, .fas.dark-mode{
+  font-weight: 900;
+  color: #fff;
 }

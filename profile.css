@@ -122,10 +122,12 @@ body {
     height: 24px;
   }
   
-  .sidebar button > span {
-    color: #f9f9f9;
+  .sidebar button > a {
+    color: #fff;
     opacity: 0;
     transition: 0.3s;
+    list-style: none;
+    font-weight: 800;
   }
   
   @keyframes appear {
@@ -139,9 +141,11 @@ body {
     }
   }
   
-  body.open .sidebar button > span {
+  body.open .sidebar button > a {
     opacity: 1;
     animation: appear 0.3s both;
+    list-style: none;
+    text-decoration: none;
   }
 
 
@@ -151,6 +155,11 @@ body.dark-mode{
 
 .dark-mode{
     color: white;
+}
+
+.fa-solid, .fas.dark-mode {
+  font-weight: 900;
+  color: #fff;
 }
 .box{
     padding-top: 0.8vw;
@@ -250,12 +259,14 @@ font-weight: bolder;
 .box button{
     margin: 1.25vw;
     margin-top: 0;
-    color: rgb(251, 37, 118);
-    background-color: white;
-    border-radius: 0.8vw;
+    color: #666;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #fff;
     font-weight: bolder;
     padding: 0.8vw;
-    border-color: white;
 }
 
 #editButton{

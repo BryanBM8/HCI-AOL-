@@ -18,12 +18,10 @@ body{
     left: 170px;
 }
 #form{
-    position: relative;
-    top: 150px;
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    height: 500px;
+    height: 510px;
     background: rgba(255, 255, 255, 0.12);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -78,7 +76,7 @@ body{
     width: 400px;
     height: 50px;
     border-radius: 10px;
-    text-align: right;
+    text-align: center;
     outline: none;
     border: none;  
 }
@@ -90,7 +88,7 @@ body{
     width: 400px;
     height: 50px;
     border-radius: 10px;
-    text-align: right;
+    text-align: center;
     outline: none;
     border: none;  
 }
@@ -117,17 +115,16 @@ body{
 }
 
 .account{
+    font-family: 'Poppins', sans-serif;
     position: relative;
     top: 150px;
     text-align: center;
-    left: -25px;
+    margin-bottom: 4vh;
 }
 .create{
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    position: relative;
-    top: 132px;
-    text-align: center;
-    left: 70px;
+    color: gray;
 }
 
 body.dark-mode{
@@ -163,7 +160,7 @@ body.dark-mode{
 
 #toggleButton{
     font-family: poppins;
-    top: -35px;
+    top: -27vh;
     position: relative;
     left: 60vw;
     border-radius: 5px;
