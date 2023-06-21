@@ -79,10 +79,8 @@ function saveToLocalStorage() {
     var passwordValue= passwordInput.value;
     localStorage.setItem("savedName", nameValue);
     localStorage.setItem("savedDate", dateValue);
-    // localStorage.setItem(savedPassword, passwordValue);
     localStorage.setItem(savedEmail,passwordValue);
-    // localStorage.setItem("loggedInEmail", emailValue);
-    // localStorage.setItem("password", passwordValue);
+    
 }
 
 var savedName = localStorage.getItem("savedName");

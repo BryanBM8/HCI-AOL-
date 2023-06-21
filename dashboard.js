@@ -436,14 +436,14 @@ function createTodo() {
   const todosData = localStorage.getItem("todos");
 
   if (todosData) {
-    // Parse the existing todos data from local storage
+    
     const todos = JSON.parse(todosData);
     todos.push(todoData);
 
-    // Save the updated todos data back to local storage
+    
     localStorage.setItem("todos", JSON.stringify(todos));
   } else {
-    // If no existing todos data, create a new array and save the todo
+    
     const todos = [todoData];
     localStorage.setItem("todos", JSON.stringify(todos));
   }
@@ -462,7 +462,7 @@ function updateTodo() {
   const desc = descInput.value.trim();
 
   if (title === "" || date === "" || desc === "") {
-    // Display an error message or perform validation as needed
+    
     return;
   }
 

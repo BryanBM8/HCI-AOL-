@@ -46,7 +46,6 @@ body.dark-mode .sidebar-header{
 .moon::after{
   color: white;
 }
-/* sidebar */
   
   button {
     background: transparent;
@@ -296,16 +295,4 @@ font-weight: bolder;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.moon{
-    bottom: 90vh;
-    position: absolute;
-    right: 50px;
-    background-color: transparent;
-    width: 30px;
-    cursor: pointer;
-}
-.moon::after{
-    color: white;
 }

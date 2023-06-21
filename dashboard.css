@@ -35,7 +35,7 @@
     opacity: 1;
   }
 
-  /* sidebar */
+
   
   button {
     background: transparent;
@@ -154,8 +154,7 @@
     text-decoration: none;
   }
 
-  /* alarm */
-  /* Importing google fonts - Poppins */
+ 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 * {
@@ -197,7 +196,7 @@ body,
     margin: 10px 0;
 }
 
-/* Styling the form */
+
 
 h3, p {
     margin-top: 10px;
@@ -268,7 +267,6 @@ h3, p {
     background: #fff;
 }
 
-/* Styling the upcoming alarm list */
 
 #upcoming-alarms {
     width: 100%;
@@ -299,7 +297,7 @@ h3, p {
   padding: 10px;
 }
 
-/* To-do list */
+
 * {
     box-sizing: border-box;
   }
@@ -318,7 +316,7 @@ h3, p {
     margin-bottom: 20vh;
   }
 
-  /* sidebar */
+  
   .content-body {
     position: relative;
     min-height: 100vh;
@@ -333,12 +331,7 @@ h3, p {
   left: 141px;
 }
 
-  /* untuk AI Voice command */
 
-  /* h1{
-    color: #fff;
-    margin-bottom: 3px;
-  } */
   
   #container {
       text-align: center;
@@ -468,7 +461,7 @@ h3, p {
     color: #343444;
   }
   
-  /* modal */
+
 
   .title{
     font-size: 20px;
