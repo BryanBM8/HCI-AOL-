@@ -29,7 +29,7 @@ document.getElementById('form').addEventListener('submit', (event) =>{
     if(password === storePassword){
         alert("Log in Successful!");
         localStorage.setItem("loggedInEmail", email2);
-        localStorage.setItem("password",password);
+        // localStorage.setItem("password",password);
         window.location.href = "./dashboard.html";
         return true;
     }else{

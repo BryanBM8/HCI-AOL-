@@ -24,7 +24,7 @@ file.addEventListener("change", function(e) {
 
 
 var savedEmail = localStorage.getItem("loggedInEmail");
-var savedPassword = localStorage.getItem("password");
+var savedPassword = localStorage.getItem(savedEmail);
 
 var emailInput = document.getElementById("emailInput");
 var passwordInput = document.getElementById("passwordInput");
@@ -50,7 +50,6 @@ function validateEmail(email) {
     if (nameInput.hasAttribute("readonly")) {
         nameInput.removeAttribute("readonly");
         dateInput.removeAttribute("readonly");
-        emailInput.removeAttribute("readonly");
         passwordInput.removeAttribute("readonly");
         editButton.textContent = "Save";
         nameInput.focus();
@@ -76,17 +75,19 @@ function saveToLocalStorage() {
     var passwordInput= document.getElementById("passwordInput");
     var nameValue = nameInput.value;
     var dateValue = dateInput.value;
-    var emailValue= emailInput.value;    var passwordValue= passwordInput.value;
+    var emailValue= emailInput.value;    
+    var passwordValue= passwordInput.value;
     localStorage.setItem("savedName", nameValue);
     localStorage.setItem("savedDate", dateValue);
-    localStorage.setItem(email2, passwordValue);
-    localStorage.setItem(password,emailValue);
+    // localStorage.setItem(savedPassword, passwordValue);
+    localStorage.setItem(savedEmail,passwordValue);
+    // localStorage.setItem("loggedInEmail", emailValue);
+    // localStorage.setItem("password", passwordValue);
 }
 
 var savedName = localStorage.getItem("savedName");
 var savedDate = localStorage.getItem("savedDate");
-var savedEmail=localStorage.getItem(email2);
-var savedPassword = localStorage.getItem(password);
+
 var nameInput = document.getElementById("nameInput");
 var dateInput = document.getElementById("dateInput");
 var emailInput=document.getElementById("emailInput");
@@ -132,3 +133,4 @@ function togglePasswordVisibility() {
         body.classList.toggle('dark-mode');
         body.classList.toggle('light-mode');
     });
+    console.log(savedEmail)
