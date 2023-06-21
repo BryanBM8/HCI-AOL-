@@ -423,7 +423,6 @@ function getEvents() {
 }
 
 function convertTime(time) {
-  //convert time to 24 hour format
   let timeArr = time.split(":");
   let timeHour = timeArr[0];
   let timeMin = timeArr[1];

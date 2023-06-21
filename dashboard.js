@@ -349,7 +349,6 @@ function createTodo() {
   const desc = descInput.value.trim();
 
   if (title === "" || date === "" || desc === "") {
-    // Display an error message or perform validation as needed
     return;
   }
 
@@ -367,16 +366,12 @@ function createTodo() {
   const editBtn = document.createElement("button");
 
   if (daysRemaining < 0) {
-    // Deadline has passed
     todo_div.style.backgroundColor = "#ffcccc";
   } else if (daysRemaining < 3) {
-    // Less than 3 days remaining
     todo_div.style.backgroundColor = "#ffebcc";
   } else if (daysRemaining < 7) {
-    // Less than 7 days remaining
     todo_div.style.backgroundColor = "#ffffcc";
   } else {
-    // More than 7 days remaining
     todo_div.style.backgroundColor = "#ccffcc";
   }
 
