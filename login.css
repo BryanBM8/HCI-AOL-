@@ -110,7 +110,7 @@ body{
 }
 
 body.dark-mode{
-    background: rgb(0, 0, 0);
+    background: #373c4f;
 }
 
 .dark-mode{

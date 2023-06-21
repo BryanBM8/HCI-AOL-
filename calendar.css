@@ -152,6 +152,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-bottom: 30px;
+  overflow-x: hidden;
   background-color: #373c4f;
 }
 .container {
@@ -712,4 +713,25 @@ body {
 }
 .credits a:hover {
   text-decoration: underline;
+}
+
+body.dark-mode{
+  background: linear-gradient(90deg, #8282c2, #fbc7d4);
+}
+
+.dark-mode{
+  color: white;
+}
+
+.moon{
+  top: 60px;
+  margin-top: 0;
+  position: absolute;
+  right: 70px; 
+  background-color: transparent;
+  width: 30px;
+  cursor: pointer;
+}
+.moon::after{
+  color: white;
 }

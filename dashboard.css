@@ -569,3 +569,24 @@ h3, p {
     font-weight: 600;
     margin-top: 20px;
   }
+
+  .moon{
+    top: 0px;
+    margin-top: 0;
+    position: absolute;
+    right: 70px; 
+    background-color: transparent;
+    width: 30px;
+    cursor: pointer;
+}
+.moon::after{
+    color: white;
+}
+
+body.dark-mode{
+  background: #373c4f;
+}
+
+.dark-mode{
+  color: white;
+}
