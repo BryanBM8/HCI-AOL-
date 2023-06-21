@@ -33,6 +33,16 @@ recognition.onresult = function(event) {
     window.location.href = 'notes.html';
   }
 
+  if (result.toLowerCase().includes('buat kalender')) {
+    // Redirect to notes.html
+    window.location.href = 'calendar.html';
+  }
+
+  if (result.toLowerCase().includes('ubah profil')) {
+    // Redirect to notes.html
+    window.location.href = 'profile.html';
+  }
+
   // Create a new div with the speech result
   createNewDiv(result);
 };
@@ -160,7 +170,7 @@ addAlarm.addEventListener('submit', event => {
 setInterval(updateTime, 1000);
 
 // Create a new Audio object for the ringtone
-const ringtone = new Audio('/icon/ajojing.mp3');
+const ringtone = new Audio('ajojing.mp3');
 
 // Function to play the ringtone
 function playRingtone() {
@@ -267,6 +277,68 @@ const todo_update = document.getElementById("todo_update");
 
 todo_submit.addEventListener("click", createTodo);
 
+function saveTodosToLocalStorage() {
+  const todos = Array.from(document.querySelectorAll(".todo"));
+  const todosData = todos.map((todo) => {
+    const title = todo.querySelector("h3").textContent;
+    const date = todo.querySelector("p:nth-child(2)").textContent;
+    const desc = todo.querySelector("p:nth-child(3)").textContent;
+    return { title, date, desc };
+  });
+  localStorage.setItem("todos", JSON.stringify(todosData));
+}
+
+function loadTodosFromLocalStorage() {
+  const todosData = JSON.parse(localStorage.getItem("todos"));
+  if (todosData) {
+    todosData.forEach((todoData) => {
+      const { title, date, desc } = todoData;
+      const todo_div = document.createElement("div");
+      const todo_title = document.createElement("h3");
+      const todo_date = document.createElement("p");
+      const todo_desc = document.createElement("p");
+      const span = document.createElement("span");
+      const editBtn = document.createElement("button");
+
+      todo_title.textContent = title;
+      todo_date.textContent = date;
+      todo_desc.textContent = desc;
+      span.textContent = "\u00D7";
+      editBtn.textContent = "Edit";
+
+      todo_div.classList.add("todo");
+      todo_div.setAttribute("draggable", "true");
+
+      todo_div.appendChild(todo_title);
+      todo_div.appendChild(todo_date);
+      todo_div.appendChild(todo_desc);
+      todo_div.appendChild(span);
+      todo_div.appendChild(editBtn);
+
+      no_status.appendChild(todo_div);
+
+      span.addEventListener("click", () => {
+        span.parentElement.remove();
+        saveTodosToLocalStorage();
+      });
+
+      editBtn.addEventListener("click", () => {
+        // ...existing code...
+
+        todo_update.addEventListener("click", () => {
+          updateTodo();
+          saveTodosToLocalStorage();
+        });
+      });
+
+      todo_div.addEventListener("dragstart", dragStart);
+      todo_div.addEventListener("dragend", dragEnd);
+    });
+  }
+}
+
+window.addEventListener("load", loadTodosFromLocalStorage);
+
 function createTodo() {
   const titleInput = document.getElementById("todo_input");
   const dateInput = document.getElementById("date_input");
@@ -359,7 +431,26 @@ function createTodo() {
   document.getElementById("todo_input").value = "";
   todo_form.classList.remove("active");
   overlay.classList.remove("active");
+
+  const todoData = { title, date, desc };
+  const todosData = localStorage.getItem("todos");
+
+  if (todosData) {
+    // Parse the existing todos data from local storage
+    const todos = JSON.parse(todosData);
+    todos.push(todoData);
+
+    // Save the updated todos data back to local storage
+    localStorage.setItem("todos", JSON.stringify(todos));
+  } else {
+    // If no existing todos data, create a new array and save the todo
+    const todos = [todoData];
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }
+
+  saveTodosToLocalStorage();
 }
+
 
 function updateTodo() {
   const titleInput = document.getElementById("todo_input");
@@ -434,6 +525,8 @@ function updateTodo() {
 
   todo_update.style.display = "none";
   todo_submit.style.display = "block";
+
+  saveTodosToLocalStorage();
 }
 
 const close_btns = document.querySelectorAll(".close");
