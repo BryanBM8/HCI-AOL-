@@ -39,8 +39,9 @@ body.dark-mode .sidebar-header{
   position: absolute;
   right: 70px; 
   background-color: transparent;
-  width: 30px;
+  width: 100%;
   cursor: pointer;
+  z-index: 30;
 }
 .moon::after{
   color: white;
