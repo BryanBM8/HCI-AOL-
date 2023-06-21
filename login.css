@@ -141,10 +141,10 @@ body.dark-mode{
 
 #toggleButton{
     font-family: poppins;
-    top: -35px;
+    top: -210px;
     position: relative;
     border-radius: 5px;
     width: -0px;
     height: 0px;
-    left: 21vw;
+    left: 60vw;
 }
