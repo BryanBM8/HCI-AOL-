@@ -98,7 +98,11 @@
                   <div class="tooltip">Click To Add</div>
                 </div>
                 <div class="todo" draggable="true">
-                  Buy a Pizza
+                  <div class="tooltip-container">
+                    Buy a Pizza
+                    <div class="tooltip">Click To Drop And Drag</div>
+                  </div>
+                  
                   <span class="close">&times;</span>
                 </div>
               </div>
@@ -127,9 +131,14 @@
                 <form class="setAlarm">
                     
                     <div class="set-alarm-field">
+                      <div class="tooltip-container">
                         <input type="number" name="hr" placeholder="HH" max="23" min="00">
+                        <div class="tooltip">Input a number</div>
                         <input type="number" name="min" placeholder="MM" max="59" min="00">
+                        <div class="tooltip">Input a number</div>
                         <input type="number" name="sec" placeholder="SS" max="59" min="00">
+                        <div class="tooltip">Input a number</div>
+                      </div>
                     </div>
 
                     <div class="buttons">
