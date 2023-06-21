@@ -127,7 +127,6 @@ body {
     opacity: 0;
     transition: 0.3s;
     list-style: none;
-    font-weight: 800;
   }
   
   @keyframes appear {
