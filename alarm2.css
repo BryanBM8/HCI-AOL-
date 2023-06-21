@@ -37,8 +37,6 @@ body,
     margin: 10px 0;
 }
 
-/* Styling the form */
-
 h3 {
     margin-top: 10px;
 }
@@ -92,8 +90,6 @@ h3 {
     font-weight: 500;
     cursor: pointer;
 }
-
-/* Styling the upcoming alarm list */
 
 #upcoming-alarms {
     width: 100%;
